@@ -1,7 +1,14 @@
+'''
 
-# uses some jina.ai webpage to actually scrape, and the thing being scraped is artificialanalysis.ai/leaderbord/models page
-# if anything breaks its most likely art analysis changed the structure of their page or maybe jina stopped working
+-uses some jina.ai webpage to actually scrape, and the thing being scraped is artificialanalysis.ai/leaderbord/models page
+-if anything breaks its most likely art analysis changed the structure of their page or maybe jina stopped working
 
+TODO: 
+-use a better more trusted and reliable scraping tool
+-add support to take user input and ask for 'how many do you want to see? ', 'open weights ownly?'
+-filtering support
+-advanced: using a super low weight model(maybe even <100m params) to feed the raw table data into to get the data in nice format
+'''
 
 import requests
 import re
